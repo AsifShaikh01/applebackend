@@ -14,7 +14,7 @@ productsRouter.get("/", async (req, res) => {
       [sortParam]: sortOrder,
     }); // sort products if a sort parameter was provided, using the sort order
 
-    res.json(products);
+    res.send(products);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

@@ -11,7 +11,7 @@ const userRouter = express.Router();
 userRouter.get("/", async (req, res) => {
   try {
     const users = await UserModel.find();
-    res.json(users);
+    res.send(users);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
