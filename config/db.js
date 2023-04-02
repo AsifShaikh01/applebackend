@@ -1,7 +1,9 @@
 //Importing the necessary modules
 
 const mongoose = require("mongoose");
-require("dotenv").config();
+const dotenv = require("dotenv")
+dotenv.config();
+// require("dotenv").config();
 
 //Using a database
 
